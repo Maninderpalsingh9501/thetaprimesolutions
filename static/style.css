@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --lightBlack: #1f201f;
+    --offWhite: #fffce1;
+    --navBgColor: rgb(255 255 255 / 0%);
+    --navOnhoverBgColorRed: #e40404;
+    --h2colorRed: #d32d2d;
+    --spanBgColor: #d32d2d;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.xl_font {
+    font-size: max(2rem, min(2.1vw + 1.25667rem, 5.0625rem));
+    line-height: 70px;
+    text-transform: capitalize;
+    margin-top: 3rem;
+}
+
+html,
+body {
+
+    font-family: "Manrope", serif !important;
+
+}
+
+body {
+    background-color: var(--lightBlack) !important;
+    color: var(--offWhite) !important;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed !important;
+    z-index: 1 !important;
+    top: 0 !important;
+    width: 100%;
+
+}
+
+.nav-item .nav-link {
+    font-size: 0.8rem;
+    color: var(--offWhite);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+
+    transition: color 0.3s ease,
+        background 0.3s ease,
+        border-radius 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--offWhite) !important;
+    background: var(--navOnhoverBgColorRed);
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--offWhite) !important;
+}
+
+.navbar.scrolled {
+    background-color: var(--lightBlack) !important;
+    transition: background-color 200ms linear;
+}
+
+.logo {
+    width: 10%;
+}
+
+.btn-outline-danger {
+    border-radius: 30px !important;
+    text-transform: capitalize;
+    font-size: 1.5rem !important;
+    padding: 5px 30px !important;
+    border-width: 3px !important;
+}
+
+.first_wrapper {
+    height: 100vh;
+    align-items: center;
+    display: grid;
+    background-size: 100rem 50rem;
+    background-image: url(./assets/images/bgredN.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.first_wrapper p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.first_wrapper p span {
+    font-size: 1.2rem;
+    font-family: "Playfair Display", serif;
+}
+
+.first_wrapper h2 {
+    font-family: "Playfair Display", serif;
+    text-transform: capitalize;
+    color: var(--h2colorRed) !important;
+    font-size: 10rem;
+    font-style: italic;
+}
+
+h2 span {
+    display: inline-block;
+    text-transform: none;
+}
+
+.first_wrapper p span {
+    background: var(--spanBgColor);
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+
+.first_wrapper h1 {
+    line-height: 7rem !important;
+    font-size: 10rem !important;
+    letter-spacing: -3px;
+}
+
+.second_wrapper {
+    padding-bottom: 5rem;
+}
+
+.second_wrapper h5 span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h5 {
+    text-transform: capitalize;
+    font-size: 1.5rem !important;
+}
+
+h5::before {
+    content: '';
+    display: inline-block;
+    background-image: url('./assets/images/Leftbracket.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: -10px;
+    vertical-align: middle;
+}
+
+h5::after {
+    content: '';
+    display: inline-block;
+    background-image: url('./assets/images/rightbracket.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.project_wrapper p,
+.project_wrapper h1,
+.project_wrapper h2,
+.project_wrapper h5 {
+    color: var(--offWhite) !important;
+}
+
+.project_wrapper h5 {
+    font-size: max(2rem, min(2.1vw + 1.25667rem, 5.0625rem)) !important;
+}
+
+.project_wrapper h5::after {
+
+    width: 45px;
+    height: 70px;
+}
+
+.project_wrapper h5::before {
+
+    width: 45px;
+    height: 70px;
+}
+
+.third_wrapper {
+    background-color: var(--offWhite)
+}
+
+.third_wrapper p,
+.third_wrapper h2,
+.third_wrapper h5 {
+    color: var(--lightBlack) !important;
+}
+
+.third_wrapper h5::before {
+    content: '';
+    display: inline-block;
+    background-image: url('./assets/images/Leftbracket_black.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 70px;
+    margin-right: -10px;
+    vertical-align: middle;
+}
+
+.third_wrapper h5::after {
+    content: '';
+    display: inline-block;
+    background-image: url('./assets/images/rightbracket_black.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 70px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.third_wrapper h5 {
+    font-size: max(2rem, min(2.1vw + 1.25667rem, 5.0625rem)) !important;
+}
+
+.card {
+    width: 100% !important;
+    border-radius: 2rem !important;
+    padding: 15px;
+    background-color: #00000000 !important;
+    border-color: #1f201f00 !important;
+    gap: 10px 0;
+}
+
+.card img {
+    width: 100% !important;
+
+}
+
+.card_wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    gap: 2.5rem 0;
+}
+
+.card_main h1 {
+    background-color: #000;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 6px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.btn-outline-success {
+    border-radius: 20px !important;
+    text-transform: capitalize;
+    font-size: 1rem !important;
+    width: fit-content;
+    padding: 5px 30px !important;
+    border-width: 3px !important;
+    color: var(--lightBlack) !important;
+    border-color: var(--lightBlack) !important;
+
+
+}
+
+.btn-outline-success:hover {
+
+    color: var(--offWhite) !important;
+    background-color: var(--lightBlack) !important;
+}
+
+.tsw {
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.third_wrapper .tsw h1 {
+    color: var(--lightBlack) !important;
+    font-size: max(2rem, min(2.1vw + 1.25667rem, 5.0625rem));
+    line-height: 70px;
+}
+
+.third_wrapper h1 span {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: var(--spanBgColor);
+
+}
+
+.company_logo_wrapper {
+    justify-content: space-between;
+    display: flex;
+    gap: 0 0;
+}
+
+.company_logo_wrapper img {
+    height: 55px;
+}
+
+footer .logo_footer {
+    width: 60%;
+}
+
+footer .cell {
+    display: grid;
+    align-items: end;
+    border-right: 1px solid #fffce14f;
+    height: 45vh;
+    padding-bottom: 15px;
+}
+
+footer .cell ul {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+.top {
+    top: 90px;
+}
+
+.project_wrapper p span {
+    font-family: "Playfair Display", serif;
+}
+
+
+.details {
+    height: 100vh;
+}
+
+.photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.photo img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  } */
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ec3131; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff; 
+  }
+
+@media only screen and (max-width: 600px) {
+    .card_wrapper {
+        grid-template-columns: auto;
+    }
+
+    .project_card_wrapper {
+        grid-template-columns: auto;
+    }
+
+    .company_logo_wrapper {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 26px;
+        grid-template-columns: auto auto;
+
+    }
+
+    .company_logo_wrapper img {
+        height: 30px;
+        object-fit: contain;
+    }
+
+    .first_wrapper h1 {
+        line-height: 3rem !important;
+        font-size: 3rem !important;
+        letter-spacing: 1px;
+    }
+
+    .first_wrapper h2 {
+
+        font-size: 3rem;
+    }
+
+    .xl_font {
+        font-size: 1rem;
+        line-height: 34px;
+        margin: 0;
+
+    }
+
+    .first_wrapper {
+
+        background-size: 94rem;
+    }
+
+    .second_wrapper {
+        padding-top: 5rem;
+    }
+
+    .third_wrapper .tsw h1 {
+
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    .third_wrapper h5 {
+        font-size: 1.5rem !important;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .navbar-toggler {
+
+        color: rgb(255 255 255);
+        background-color: #d32d2d !important;
+
+    }
+
+    #responsive_li {
+        padding: 0% !important;
+    }
+
+    .project_gallery {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-fluid {
+        max-width: 1320px;
+    }
+}
