@@ -1,0 +1,300 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Theta Prime Solutions</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css" />
+        <!-- google fonts start-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+        <!-- google fonts end-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-color">
+            <div class="container-fluid">
+                <img src="{% static 'assets/images/logo-white.png' %}" alt="logo" class="w-10 px-1 logo" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2" id="responsive_li">
+                            <a class="nav-link active" aria-current="page" href="#">[Home]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">[About Us]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">[Explore]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">[Contact Us]</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="first_wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center align-center">
+                        <h1>Theta Prime</h1>
+                        <h2>solutions</h2>
+                        <p class="mt-5">
+                            An independent creative agency based in <span><i>INDIA.</i></span><br />
+                            We specialise in impact-led strategy, design & development
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="pb-5">why <span>theta</span></h5>
+                        <p class="xl_font">
+                            we specialize in delivering top-notch training and innovative digital solutions. With a focus on empowering individuals and businesses, we combine education with expertise to create impactful results. Let’s shape
+                            the future, together!
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-end mt-5 pt-3">
+                        <button type="button" class="btn btn-outline-danger">enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project_wrapper">
+            <div class="container">
+                <div class="row" style="height: 40vh;">
+                    <div class="col-md-12 text-center">
+                        <h5>Creative Solutions</h5>
+                        <p>
+                            Discover the projects that define our passion for <br />
+                            <span><i>development</i>.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row project_gallery">
+                    <div class="col-md-6 text-start">
+                        <div class="photos">
+                            <div class="photo">
+                                <img src="{% static 'assets/images/projects/cbm.png' %}" alt="" />
+                            </div>
+                            <div class="photo">
+                                <img src="{% static 'assets/images/projects/lms.png' %}" alt="" />
+                            </div>
+                            <div class="photo">
+                                <img src="{% static 'assets/images/projects/medical.png' %}" alt="" />
+                            </div>
+                            <div class="photo">
+                                <img src="{% static 'assets/images/projects/sawrajdashboard.png' %}" alt="" />
+                            </div>
+                            <div class="photo">
+                                <img src="{% static 'assets/images/projects/trade.webp' %}" alt="" />
+                            </div>
+                            <div class="photo">
+                                <img src="{% static 'assets/images/projects/virtual.png' %}" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="details">
+                            <h1>AI-Powered Motor Fault Detection</h1>
+
+                            <p>Analyzes vibration data to diagnose automotive motor faults, predicting issues and enabling proactive maintenance to minimize downtime.</p>
+                        </div>
+
+                        <div class="details">
+                            <h1>LMS: Apna Virsa Panjabi School</h1>
+
+                            <p>Designed an LMS for Apna Virsa Panjabi School with course management, assessments, and communication tools to enhance education delivery and tracking.</p>
+                        </div>
+
+                        <div class="details">
+                            <h1>AI-Powered Annotation Detection</h1>
+                            <p>Utilizes computer vision to detect and analyze manual markings on PDF reports, linking annotations to labels for streamlined billing reviews.</p>
+                        </div>
+
+                        <div class="details">
+                            <h1>Control and Safety Analysis System</h1>
+                            <p>Developed using .NET and Power BI to optimize operations, enhance safety, and mitigate risks with integrated automation and advanced analytics.</p>
+                        </div>
+
+                        <div class="details">
+                            <h1>CryptoAlgo: Automated Trading for Dubai</h1>
+
+                            <p>A web-based platform leveraging advanced algorithms for efficient, automated trading, tailored to Dubai's latest cryptocurrency.</p>
+                        </div>
+
+                        <div class="details">
+                            <h1>AI-Driven Virtual Fashion Styling</h1>
+
+                            <p>An AI-powered platform that personalizes outfit suggestions and enables virtual try-ons by analyzing user preferences and clothing patterns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third_wrapper">
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="pb-5 mt-5">Courses Offered.</h5>
+                        <div class="card_wrapper">
+                            <div class="card_main">
+                                <div class="card">
+                                    <img src="{% static 'assets/images/courses/bio.jpg' %}" alt="bio" style="border-radius: 1rem;" />
+                                    <h1>Electrical engineering</h1>
+                                    <p>Unlock the power of AI in decoding biological data and advancing bioinformatics.</p>
+                                    <button type="button" class="btn btn-outline-success">view details</button>
+                                </div>
+                            </div>
+
+                            <div class="card_main">
+                                <div class="card">
+                                    <img src="{% static 'assets/images/courses/bio.jpg' %}" alt="bio" style="border-radius: 1rem;" />
+                                    <h1>Mechanical engineering</h1>
+                                    <p>Unlock the power of AI in decoding biological data and advancing bioinformatics.</p>
+                                    <button type="button" class="btn btn-outline-success">view details</button>
+                                </div>
+                            </div>
+
+                            <div class="card_main">
+                                <div class="card">
+                                    <img src="{% static 'assets/images/courses/bio.jpg' %}" alt="bio" style="border-radius: 1rem;" />
+                                    <h1>Computer science / IT</h1>
+                                    <p>Unlock the power of AI in decoding biological data and advancing bioinformatics.</p>
+                                    <button type="button" class="btn btn-outline-success">view details</button>
+                                </div>
+                            </div>
+
+                            <div class="card_main">
+                                <div class="card">
+                                    <img src="{% static 'assets/images/courses/bio.jpg' %}" alt="bio" style="border-radius: 1rem;" />
+                                    <h1>Commerce</h1>
+                                    <p>Unlock the power of AI in decoding biological data and advancing bioinformatics.</p>
+                                    <button type="button" class="btn btn-outline-success">view details</button>
+                                </div>
+                            </div>
+
+                            <div class="card_main">
+                                <div class="card">
+                                    <img src="{% static 'assets/images/courses/bio.jpg' %}" alt="bio" style="border-radius: 1rem;" />
+                                    <h1>BIO informatics</h1>
+                                    <p>Unlock the power of AI in decoding biological data and advancing bioinformatics.</p>
+                                    <button type="button" class="btn btn-outline-success">view details</button>
+                                </div>
+                            </div>
+
+                            <!-- <div class="card_main">
+                                <div class="card">
+                                    <img src="./assets/images/courses/bio.jpg" alt="bio" style="border-radius: 1rem;" />
+                                    <h1>Data analytics</h1>
+                                    <p>Unlock the power of AI in decoding biological data and advancing bioinformatics.</p>
+                                    <button type="button" class="btn btn-outline-success">view details</button>
+                                </div>
+                            </div>
+
+                            <div class="card_main">
+                                <div class="card">
+                                    <img src="./assets/images/courses/bio.jpg" alt="bio" style="border-radius: 1rem;" />
+                                    <h1>Python development</h1>
+                                    <p>Unlock the power of AI in decoding biological data and advancing bioinformatics.</p>
+                                    <button type="button" class="btn btn-outline-success">view details</button>
+                                </div>
+                            </div>
+
+                            <div class="card_main">
+                                <div class="card">
+                                    <img src="./assets/images/courses/bio.jpg" alt="bio" style="border-radius: 1rem;" />
+                                    <h1>MERN</h1>
+                                    <p>Unlock the power of AI in decoding biological data and advancing bioinformatics.</p>
+                                    <button type="button" class="btn btn-outline-success">view details</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container tsw">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>
+                            Top <span>companies</span> our students <br />
+                            working with
+                        </h1>
+
+                        <div class="company_logo_wrapper mt-5">
+                            <img src="{% static 'assets/images/company/amazon.png' %}" alt="amazon" />
+                            <img src="{% static 'assets/images/company/cisco-corp.png' %}" alt="cisco-corp" />
+                            <img src="{% static 'assets/images/company/myntra.png' %}" alt="myntra" />
+                            <img src="{% static 'assets/images/company/ola.png' %}" alt="ola" />
+                            <img src="{% static 'assets/images/company/walmart-corp.png' %}" alt="walmart-corp" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 cell">
+                        <img src="{% static 'assets/images/logo-white.png' %}" alt="logo" class="logo_footer" />
+                    </div>
+                    <div class="col-md-4 cell">
+                        <ul>
+                            <li>home</li>
+                            <li>About Us</li>
+                            <li>Courses</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4" style="display: grid; align-items: end; padding-bottom: 15px;">
+                        <div>
+                            <h1>Say hello</h1>
+                            <span class="d-flex gap-2">
+                                <h4>1234@gmail.com</h4>
+                                <h4>|</h4>
+                                <h4>+91-1234567890</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+        <script src="{% static 'script.js' %}"></script>
+    </body>
+</html>
