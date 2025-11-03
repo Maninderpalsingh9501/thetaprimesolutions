@@ -346,3 +346,4 @@ yapf @ file:///tmp/build/80754af9/yapf_1615749224965/work
 yarg==0.1.9
 yarl==1.8.2
 zipp @ file:///C:/ci/zipp_1652273994994/work
+whitenoise
